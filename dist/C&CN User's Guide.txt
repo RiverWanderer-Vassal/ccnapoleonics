@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Commands & Colors Napoleonics</title>
+
+<header>
+   <h1>Commands & Colors Napoleonics  </h1>
+   <p>The Exciting Napoleonics Battlefield Game</p>
+   </header>
+
+<h2>Introduction</h2>
+
+<p>Commands & Colors Napoleonics is designed by Richard Borg and published by <a href=https://www.gmtgames.com rel="noopener noreferrer" target="_blank">GMT
+Games, LLC</a>. GMT Games holds the copyrights to the images and other game related materials contained in this module and they are used with their permission.  This module is intended for the use of those who own a copy of the game and wish to play with opponents via the internet.
+
+<h2>How to Play a Game</h2>
+<p>To start a game, select <i>File &gt; Scenarios &gt; Official Scenarios</i> and choose one
+of the pre-set scenarios from the list or select <i>New Setup</i> to create your
+own scenario. After you make your selection, a window will prompt you to choose your side to play.  You may choose to be either Allies or French, which will assign you a particular window to hold your hand of command cards. You may also choose Solitaire to control both hands.
+
+<p>The pre-set scenarios have all the terrain hexes and army
+units on the board. The rules for each
+scenario are included in the <i>Notes</i> window which is accessed by clicking the
+button with that title.  There are zoom buttons on the right side of the control panel that allow you to increase/decrease the scale of the board for best viewing on your system.  When at less than full magnification, you can mouse-over zoom the individual pieces and cards to see them better or to see the full underlying Terrain hex.
+
+<p>It is not necessary to shuffle the draw deck before drawing cards, as it is set to automatically shuffle. Each player has a window that holds their cards. Only the player of that side may
+open and view this window. These windows are opened by clicking on the button with that side's name on it on the control
+panel. Cards can be moved from the draw
+deck to a player's hand by drag-and-drop.  If needed, the discard pile may be re-shuffled into the draw
+pile via a right-click option.
+
+<p>Some command cards refer to specific right or left
+flanks. As the board is static, each pre-set scenario has tags on the game board map that indicate which board edge belongs to which army.  The army whose name appears at the top of the map has its flanks reversed from the appearance on the screen, i.e. the right side of the map is that army's left flank and the left side of the map is its right flank.
+
+<p>It is suggested that command cards be dragged onto the board for your opponent to place on the discard pile, giving them time to read the card.
+
+<p>To order a unit, you can  select the unit and press [CTRL-O] or choose <i>Order Unit</i> from the right-click menu.  It will be highlighted with a green outline to designate that it is ordered.  The same procedure will remove the highlight from a previously ordered unit.  A unit that is moved will also automatically be given this green outline.  Moving units will generate movement trails, so units that move multiple hexes should be moved to each hex one at a time to give them a proper movement trail.  At the end of your turn, you can hit the "Ends Turn" button on the far right of the control panel to remove all order markers and movement trails.  Note that multiple units can be selected and moved together, so take care not to do this inadvertently.
+
+<p>Battle dice are rolled via the dice tray which is accessed from the control panel. There are buttons that will roll from 1 to 7 battle dice at once. The board game has special dice with images on each face. These are represented by the following abbreviations:
+
+<ul>
+<li>Infantry symbol (blue) = INF (two faces per die)</li>
+<li>Cavalry symbol (yellow) = CAV</li>
+<li>Artillery symbol (red) = ART</li>
+<li>Flag symbol = FLG</li>
+<li>Crossed Sabres symbol = XSW</li>
+</ul>
+
+<p>Prior to rolling any battle dice, the active player should mark the combat using the <i>Attacker Marker</i> [CTRL-A] and <i>Target Marker</i> [CTRL-T] right-click menu options. The attacking unit(s) will show a yellow marker and the target a red marker. The active player should then announce the number of dice to be rolled, allowing the opponent time to confirm the dice roll, decide to go into Square, Retire & Reform or play a First Strike card. When playing using the Tactician Card deck, the combat sequence may involve a Tactician card play on both sides and may iterate between the players.
+
+<h3>Retire & Reform</h3>
+The Target marker can be turned into a <i>Retire Marker</i> (green circle with an "R"), via the unit's right click menu [CTRL-S], to indicate that a cavalry unit will Retire & Reform or the equivalent for any unit when the Tactician Card "Leader Orders a Fallback" has been played. Similarly, to confirm that a cavalry unit will not Retire & Reform, the <i>Stand</i> option [ALT-S] may be chosen, placing a Stand marker (white circle with "-").
+
+<h3>Square</h3>
+To form Square using a Command Card, use the button provided for that purpose on the control bar of the defending player's hand window. The button will randomly select one of that player's Command Cards and place it face down on the board, from where it should be moved to an available square card space at the side of the main board. The squaring infantry unit should be marked using the <i>Square Up</i> right-click command [ALT-H] to set colour matching the space used to hold that square's Command Card. To un-square, use the <i>Square Down</i> right-click command [ALT-J] and drag that square's Command Card back to the owning player's hand.
+
+<p>Masked Cards Bug Recovery - If a player uses the Vassal UnDo button to reverse a "Form Square" Command Card discard, all Commands Cards in that player's hand will be masked. To recover from this error, use the "Flip All" button from the control bar in the same hand window.
+
+<p>Once all cards have been played and die roll confirmed, the attacking player rolls the dice. If excess dice are rolled accidentally, the rightmost die or dice should be discounted. 
+
+<p>When units suffer hits, the owning player registers this by
+right-clicking the unit and selecting <i>Take Hit</i> [CTRL-H] from the menu. Each time this is done it will reduce the unit's strength by 1.  If a unit is rallied or a correction is needed, select <i>Recover Hit</i> [CTRL-R] from the right-click menu to increase its strength.
+
+<p>There is a <i>No battle</i> marker (blue) that can be used to indicate when a unit cannot battle because of movement or terrain restrictions.  It can be accessed from the right click menu or by using [CTRL-N].  The same method is used to indicate units that completed combat on a given turn.
+
+<p>A line of sight thread is provided, activated by clicking the <i>LoS</i> button on the right side of the control panel.  The board will fade out and you place one end of the thread by left-clicking on a hex, then holding down the left-click button move the pointer to the target hex and release. The LoS thread will snap to centre-hex at each end. It will show a red thread and a range in hexes.  Simply click the board to release the thread.  The LoS thread is viewable by both players.
+
+<p>Leaders will stack on top of units to which they are attached.  You can view the stack by holding your pointer over the stack, which should give you a side-by-side view of the stacked units and terrain, if any.  To select or move the unit underneath the leader, first double left-click the stack to separate the leader and the unit.
+
+<p>Victory Tracks are positioned at the top and bottom of the main board . They are used to track the number of victory banners
+each player has earned. Numbered spaces should indicate the required banners and excess spaces may be flagged with a dummy banner. When a unit or leader is eliminated, it is placed by the owning player on his opponent's victory track.  Note: In order to keep the board tidy, it is recommended that you get rid of the resulting movement trail by right-clicking the unit moved to the track and selecting <i>Order Unit</i> [CTRL-O].  If a scenario awards banners for things other than eliminating units and leaders, banners can be dragged from the <i>Terrain &gt; Markers</i> window to the victory track. Note that banners will fix in position once another game element is clicked on. For this reason, it is recommended that temporary banners are allocated from the right-most spaces and permanent banners from the left-most. However, the user may delete, clone or move a banner by first shift-clicking on the banner in question.
+
+
+<h2><Web Links</h2>
+
+<p>Weblinks useful in-game references and other game support are listed under the "Help" menu.
+
+<p>For further help or to report a module bug, post on the C&C Napoleonics fan website in the <a href=https://www.commandsandcolors.net/napoleonics/forum-main/19-online-games-and-tournaments.html>Online Games Forum </a>
+
+
+<p>To explore the game series further: <a href=https://www.gmtgames.com/xsearch?searchterm=commands+and+colors%3A+napoleonics>Search GMT Games website </a> or browse on the <a href=https://boardgamegeek.com/boardgame/62222/commands-colors-napoleonics>BGG game page</a>.
+
+
+</body>
+</html>
