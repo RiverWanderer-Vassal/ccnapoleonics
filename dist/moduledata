@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
   <version>4.1-a0f1</version>
-  <VassalVersion>3.3.4-SNAPSHOT-3082d1ffb</VassalVersion>
-  <dateSaved>1598190231743</dateSaved>
+  <VassalVersion>3.3.3-SNAPSHOT-bug13319-61cafd3b4</VassalVersion>
+  <dateSaved>1598271715565</dateSaved>
   <description>"Lockdown Edition":  CT / image cleanup</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
