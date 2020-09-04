@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.1-a0f4</version>
-  <VassalVersion>3.4.0-beta1</VassalVersion>
-  <dateSaved>1598890229124</dateSaved>
+  <version>4.1-a0f5</version>
+  <VassalVersion>3.4.0-SNAPSHOT-89e053500</VassalVersion>
+  <dateSaved>1599203494715</dateSaved>
   <description>"Lockdown Edition":  VB</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
