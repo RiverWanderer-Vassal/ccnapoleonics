@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.1-a0f6</version>
-  <VassalVersion>3.4.0-SNAPSHOT-c1bc94ea8</VassalVersion>
-  <dateSaved>1599242968009</dateSaved>
-  <description>"Lockdown Edition":  autodice</description>
+  <version>4.1-a0f10</version>
+  <VassalVersion>3.4.0</VassalVersion>
+  <dateSaved>1599757239368</dateSaved>
+  <description>"Lockdown Edition":  emily test</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
