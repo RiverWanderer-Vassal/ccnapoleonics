@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.1-a0f17</version>
-  <VassalVersion>3.4.2</VassalVersion>
-  <dateSaved>1600761720038</dateSaved>
+  <version>4.1-a0f17 - stack bug</version>
+  <VassalVersion>3.4.3-SNAPSHOT-8a786d685</VassalVersion>
+  <dateSaved>1600959828663</dateSaved>
   <description>"Lockdown Edition"</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
