@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.0a17f01 order click; cav b/t; click art attack</version>
-  <VassalVersion>3.4.4-SNAPSHOT-0c9d947ed</VassalVersion>
-  <dateSaved>1601499730916</dateSaved>
+  <version>4.0a22f1 Sq msg; clear mkr</version>
+  <VassalVersion>3.4.6</VassalVersion>
+  <dateSaved>1602565472962</dateSaved>
   <description>"Lockdown Edition"</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
