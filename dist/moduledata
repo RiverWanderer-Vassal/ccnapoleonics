@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>3.43r02O</version>
-  <VassalVersion>3.3.0-beta4</VassalVersion>
-  <dateSaved>1591992303387</dateSaved>
-  <description>Napoleonic Wars</description>
+  <version>3.43 BETA</version>
+  <VassalVersion>3.4.6</VassalVersion>
+  <dateSaved>1602887417536</dateSaved>
+  <description>with V4 Read-Only Compatibility</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
