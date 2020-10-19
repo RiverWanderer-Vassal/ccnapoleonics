@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.launch.BasicModule VassalVersion="3.4.7-SNAPSHOT-969c426bb" description="with V4 Read-Only Compatibility" name="Commands &amp; Colors: Napoleonics" nextPieceSlotId="1807" version="3.43 BETA">
+<VASSAL.launch.BasicModule VassalVersion="3.4.6" description="includes Version 4 Viewer" name="Commands &amp; Colors: Napoleonics" nextPieceSlotId="1807" version="3.43 BETA">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="Splash.jpg" title="About Commands &amp; Colors: Napoleonics"/>
@@ -95,6 +95,8 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="A10" originx="901" originy="65"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="A11" originx="988" originy="65"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="A12" originx="1075" originy="65"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="A13" originx="1161" originy="65"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="TopArmy" originx="553" originy="16"/>
                         </VASSAL.build.module.map.boardPicker.board.RegionGrid>
                         <VASSAL.build.module.properties.ZoneProperty description="V4 compatability" initialValue="" isNumeric="false" max="null" min="null" name="ArmyIndexValue" wrap="false"/>
                     </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
@@ -112,6 +114,8 @@
                             <VASSAL.build.module.map.boardPicker.board.Region name="F08" originx="727" originy="790"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="F07" originx="640" originy="790"/>
                             <VASSAL.build.module.map.boardPicker.board.Region name="F06" originx="553" originy="790"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="F13" originx="1161" originy="805"/>
+                            <VASSAL.build.module.map.boardPicker.board.Region name="BottomArmy" originx="553" originy="845"/>
                         </VASSAL.build.module.map.boardPicker.board.RegionGrid>
                         <VASSAL.build.module.properties.ZoneProperty description="V4 compatability" initialValue="" isNumeric="false" max="null" min="null" name="ArmyIndexValue" wrap="false"/>
                     </VASSAL.build.module.map.boardPicker.board.mapgrid.Zone>
@@ -300,7 +304,7 @@
     <VASSAL.build.module.PieceWindow hidden="false" hotkey="" icon="Icon_Terrain.png" name="Terrain" scale="1.0" text="Terrain" tooltip="Show/Hide the Terrain window">
         <VASSAL.build.widget.TabWidget entryName="Terrain">
             <VASSAL.build.widget.PanelWidget entryName="Terrain" fixed="true" nColumns="6" scale="1.0" vert="false">
-                <VASSAL.build.widget.PieceSlot entryName="Town" gpid="334" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Town.png;Town/	null;78;65;334;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Town" gpid="334" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Town.png;Town/	null;0;0;334;2;ClickedX;550;ClickedY;805</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Town - Fieldworks2" gpid="72" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Town_Entrenchments.png;Town - Fieldworks2/	null;0;0;72;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Town - Church" gpid="337" height="100" width="86">+/null/prototype;Terrain1	piece;;;Church.png;Town - Church/	null;0;0;337;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Town - Windmill" gpid="115" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_TownWindmill.png;Town - Windmill/	null;0;0;115;0</VASSAL.build.widget.PieceSlot>
@@ -315,7 +319,7 @@
                 <VASSAL.build.widget.PieceSlot entryName="Forest" gpid="335" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Forest.png;Forest/	null;0;0;335;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Forest - Fieldworks2" gpid="108" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Forest_entrenchment.png;Forest - Fieldworks2/	null;0;0;108;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Orchard" gpid="1397" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_orchard_vineyard.png;Orchard/	null;0;0;1397;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="Hill" gpid="109" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Hill.png;Hill/	null;0;0;109;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="Hill" gpid="109" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_Hill.png;Hill/	null;0;0;109;2;ClickedX;550;ClickedY;805</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Hill - Fieldworks2" gpid="110" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_HillEntrenchments2.png;Hill - Fieldworks2/	null;0;0;110;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Hill - Fieldworks3" gpid="111" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_HillEntrenchments.png;Hill - Fieldworks3/	null;0;0;111;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="Hill - Fieldworks4" gpid="112" height="100" width="86">+/null/prototype;Terrain1	piece;;;Tile_HillEntrenchments4.png;Hill - Fieldworks4/	null;0;0;112;0</VASSAL.build.widget.PieceSlot>
@@ -428,7 +432,7 @@
                 <VASSAL.build.widget.PieceSlot entryName="French Horse Artillery" gpid="204" height="73" width="77">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;-22;unit_HA.png;;false;HA;;;false;;1;1;true;65,130;;	prototype;Unit3A\	piece;;;fre_HA.png;French Horse Artillery/1	\	null;0;0;204;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="French Guard Horse Artillery" gpid="1393" height="73" width="77">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;-22;unit_GHA.png;;false;GHA;;;false;;1;1;true;65,130;;	prototype;Unit3A\	piece;;;fre_GHA.png;French Guard Horse Artillery/1	\	null;0;0;1393;0</VASSAL.build.widget.PieceSlot>
                 <VASSAL.build.widget.PieceSlot entryName="French Guard Artillery" gpid="211" height="73" width="77">+/null/emb2;Activate;2;;;2;;;2;;;;1;false;0;-22;unit_GFA.png;;false;GFA;;;false;;1;1;true;65,130;;	prototype;Unit3A\	piece;;;fre_GFA.png;French Guard Artillery/1	\	null;0;0;211;0</VASSAL.build.widget.PieceSlot>
-                <VASSAL.build.widget.PieceSlot entryName="French Leader" gpid="205" height="67" width="43">+/null/prototype;Leader	piece;;;fre_LDR.png;French Leader/	null;101;59;205;0</VASSAL.build.widget.PieceSlot>
+                <VASSAL.build.widget.PieceSlot entryName="French Leader" gpid="205" height="67" width="43">+/null/prototype;Leader	piece;;;fre_LDR.png;French Leader/	null;0;0;205;0</VASSAL.build.widget.PieceSlot>
             </VASSAL.build.widget.PanelWidget>
             <VASSAL.build.widget.PanelWidget entryName="British" fixed="true" nColumns="5" scale="1.0" vert="false">
                 <VASSAL.build.widget.PieceSlot entryName="British Line Infantry" gpid="84" height="73" width="64">+/null/emb2;Activate;2;;Square up;2;;Square back;2;;;;1;false;-25;-25;,Icon_FR_Square1.png,Icon_FR_Square2.png,Icon_FR_Square3.png,Icon_FR_Square4.png,Icon_FR_Square5.png,Icon_FR_Square6.png,Icon_FR_Square7.png,Icon_FR_Square8.png;,square 1,square 2,square 3,square 4,square 5,square 6,square 7,square 8;true;Square;;;false;;1;1;true;65,130;72,520;74,520	emb2;Activate;2;;;2;;;2;;;;1;false;0;-22;unit_LI.png;;false;LN;;;false;;1;1;true;65,130;;\	prototype;Unit4\\	piece;;;brit_LN.png;British Line Infantry/1	1\	\\	null;0;0;84;0</VASSAL.build.widget.PieceSlot>
@@ -611,7 +615,7 @@
     </VASSAL.build.module.ChartWindow>
     <VASSAL.build.module.PredefinedSetup isMenu="true" name="Scenarios" useFile="true">
         <VASSAL.build.module.PredefinedSetup isMenu="false" name="New Setup" useFile="true"/>
-        <VASSAL.build.module.PredefinedSetup file="B00 - Standard Map empty.vsav" isMenu="false" name="Standard Map empty" useFile="true"/>
+        <VASSAL.build.module.PredefinedSetup file="B00 - Standard Map empty.vsav" isMenu="false" name="Standard Map (Empty)" useFile="true"/>
         <VASSAL.build.module.PredefinedSetup isMenu="true" name="Base Game" useFile="true">
             <VASSAL.build.module.PredefinedSetup file="B001 - Rolica1.vsav" isMenu="false" name="B001 - Rolica (French First Position) - 17 August 1808" useFile="true"/>
             <VASSAL.build.module.PredefinedSetup file="B002 - Rolica2.vsav" isMenu="false" name="B002 - Rolica (French Second Position) - 17 August 1808" useFile="true"/>
@@ -754,6 +758,7 @@
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="Third Coalition (1803-1806)" useFile="true">
                 <VASSAL.build.module.PredefinedSetup file="BH01 - Caldiero1805.vsav" isMenu="false" name="BH01 - Caldiero - 30 October 1805" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="GG01-Austerlitz.vsav" isMenu="false" name="GG01 - Austerlitz - 2 December 1805" useFile="true"/>
+                <VASSAL.build.module.PredefinedSetup file="LC01 - Maida.vsav" isMenu="false" name="LC01 - Maida - 4 July 1806" useFile="true"/>
             </VASSAL.build.module.PredefinedSetup>
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="Fourth Coalition (1807)" useFile="true"/>
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="The Peninsula War 1808-1814" useFile="true">
@@ -770,6 +775,10 @@
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="Seventh Coalition (1815)" useFile="true">
                 <VASSAL.build.module.PredefinedSetup file="MB01 - Issy - July 2nd 1815 v5-1.vsav" isMenu="false" name="MB01 - Issy - 2 July 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="GG02-Waterloo.vsav" isMenu="false" name="GG02 - Waterloo (All In One) - 18 June 1815" useFile="true"/>
+            </VASSAL.build.module.PredefinedSetup>
+            <VASSAL.build.module.PredefinedSetup isMenu="true" name="Miscellaneous" useFile="true">
+                <VASSAL.build.module.PredefinedSetup file="GG00-Lost-Battle.vsav" isMenu="false" name="GG00 - The Lost Battle - Teaching Scenario" useFile="true"/>
+                <VASSAL.build.module.PredefinedSetup file="HR01 - Puebla.vsav" isMenu="false" name="HR01 - Puebla - 5 May 1862 (Second Franco-Mexican War)" useFile="true"/>
             </VASSAL.build.module.PredefinedSetup>
         </VASSAL.build.module.PredefinedSetup>
     </VASSAL.build.module.PredefinedSetup>
