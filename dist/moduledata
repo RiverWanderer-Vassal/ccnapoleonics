@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>3.50b01</version>
+  <version>3.5.0a17a (Beta)</version>
   <VassalVersion>3.5.5</VassalVersion>
-  <dateSaved>1619380606218</dateSaved>
-  <description>includes Version 4 Viewer &amp; Fan Scenarios</description>
+  <dateSaved>1620897066030</dateSaved>
+  <description>Includes Fan Scenarios. Observe-only for v3.4 and v4 games.</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
