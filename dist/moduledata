@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>3.42</version>
-  <VassalVersion>3.2.17</VassalVersion>
-  <dateSaved>1582114514784</dateSaved>
-  <description>Napoleonic Wars</description>
+  <version>4.0.6</version>
+  <VassalVersion>3.5.8</VassalVersion>
+  <dateSaved>1637260035043</dateSaved>
+  <description>Includes Fan Scenarios. Observe-only for v3.4</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
