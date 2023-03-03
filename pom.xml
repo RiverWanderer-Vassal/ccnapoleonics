@@ -6,7 +6,7 @@
     <!-- name and version of the module -->
     <groupId>CCNapoleonics</groupId>
     <artifactId>CCNapoleonics</artifactId>
-    <version>3.42</version>
+    <version>3.43</version>
 
     <properties>
         <!-- set Vassal version here -->
