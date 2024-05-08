@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.1.16</version>
+  <version>5.0.0beta9</version>
   <extra1>with fan scenarios</extra1>
-  <extra2>&lt;br&gt;V4 by Mark Benson from prior module by Michel Dippel.&lt;br&gt;Core game images (c) GMT Games LLC.</extra2>
-  <VassalVersion>3.7.9</VassalVersion>
-  <dateSaved>1709387566579</dateSaved>
-  <description>See Help...Release Notes for an introduction to the module.</description>
-  <name>Commands &amp; Colors: Napoleonics</name>
+  <extra2>&lt;br&gt;by Mark Benson from prior module by Michel Dippel.&lt;br&gt;Core game images (c) GMT Games LLC.</extra2>
+  <VassalVersion>3.7.12</VassalVersion>
+  <dateSaved>1715211534768</dateSaved>
+  <description>Full card play automation, Combat Assist and more! See Help... to get started.</description>
+  <name>Commands &amp; Colors: Napoleonics V5</name>
 </data>
