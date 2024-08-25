@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>5.1.0beta3</version>
+  <version>5.1.0beta4</version>
   <extra1>with fan scenarios</extra1>
   <extra2>&lt;br&gt;by Mark Benson from prior module by Michel Dippel&lt;br&gt;Block piece graphics prepared by Alessandro Crespi&lt;br&gt;Core game images (c) GMT Games LLC.</extra2>
   <VassalVersion>3.7.14</VassalVersion>
-  <dateSaved>1724370114202</dateSaved>
+  <dateSaved>1724544750772</dateSaved>
   <description>New graphics, card play automation, Combat Assist and more! See Help... to get started.</description>
   <name>Commands &amp; Colors: Napoleonics V5</name>
 </data>
