@@ -1,0 +1,8 @@
+<svg fill="#EA3323" width="48px" height="48px" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+<!-- Google Material Symbol, modified under Apache v2.0 licence: https://apache.org/licenses/LICENSE-2.0.html -->
+    <!-- Red circle (kept exactly as it was) -->
+    <path fill="#EA3323" d="M480-80q82 0 155-31.5t127-86q54.5-54.5 86-127T880-480q0-82-31.5-155.5T763-763q-54.5-54.5-127-86T480-880q-82 0-155.5 31.5T197-763q-54.5 54.5-86 127T80-480q0 82 31.5 155.5T197-197q54.5 54.5 127 86t156 31.5Z"/>
+
+    <!-- White exclamation mark -->
+    <path fill="white" d="M479.98-280q14.02 0 23.52-9.48t9.5-23.5q0-14.02-9.48-23.52t-23.5-9.5q-14.02 0-23.52 9.48t-9.5 23.5q0 14.02 9.48 23.52t23.5 9.5ZM453-433h60v-253h-60v253Z"/>
+</svg>
