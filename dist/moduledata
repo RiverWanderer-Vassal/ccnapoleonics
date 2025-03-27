@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>3.42</version>
-  <VassalVersion>3.2.17</VassalVersion>
-  <dateSaved>1582114514784</dateSaved>
+  <version>3.42X</version>
+  <extra1/>
+  <extra2/>
+  <VassalVersion>3.7.16-SNAPSHOT</VassalVersion>
+  <dateSaved>1743041435719</dateSaved>
   <description>Napoleonic Wars</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
