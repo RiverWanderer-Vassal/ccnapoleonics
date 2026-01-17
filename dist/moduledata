@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <data version="1">
-  <version>4.2.0</version>
+  <version>4.2.1</version>
   <extra1>with fan scenarios</extra1>
   <extra2>&lt;br&gt;V4 by Mark Benson from prior module by Michel Dippel.&lt;br&gt;Core game images (c) GMT Games LLC.</extra2>
   <VassalVersion>3.7.18</VassalVersion>
-  <dateSaved>1767886211345</dateSaved>
+  <dateSaved>1768653674117</dateSaved>
   <description>See Help...Release Notes for an introduction to the module.</description>
   <name>Commands &amp; Colors: Napoleonics</name>
 </data>
