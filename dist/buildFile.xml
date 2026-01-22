@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="with fan scenarios" ModuleOther2="&lt;br&gt;V4 by Mark Benson from prior module by Michel Dippel.&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.7.18" description="See Help...Release Notes for an introduction to the module." name="Commands &amp; Colors: Napoleonics" nextPieceSlotId="5988" version="4.2.7">
+<VASSAL.build.GameModule ModuleOther1="with fan scenarios" ModuleOther2="&lt;br&gt;V4 by Mark Benson from prior module by Michel Dippel.&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.7.18" description="See Help...Release Notes for an introduction to the module." name="Commands &amp; Colors: Napoleonics" nextPieceSlotId="5988" version="4.2.8">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Documentation>
         <VASSAL.build.module.documentation.AboutScreen fileName="Splash.jpg" title="About Commands &amp; Colors: Napoleonics"/>
@@ -2818,7 +2818,7 @@
                 <VASSAL.build.module.PredefinedSetup file="MD22 - Bar-Sur-Aube.vsav" isMenu="false" name="MD22 - Bar-Sur-Aube - 27 February 1814" useFile="true"/>
             </VASSAL.build.module.PredefinedSetup>
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="Seventh Coalition (1815)" useFile="true">
-                <VASSAL.build.module.PredefinedSetup file="GG02 - Waterloo.vsav" isMenu="false" name="GG02 - Waterloo (All In One) - 18 June 1815" useFile="true"/>
+                <VASSAL.build.module.PredefinedSetup file="GG02-Waterloo.vsav" isMenu="false" name="GG02 - Waterloo (All In One) - 18 June 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="KB01 - Quatre Bras.vsav" isMenu="false" name="KB01 - Quatre Bras - 16 June 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="MB01 - Issy July 2nd 1815.vsav" isMenu="false" name="MB01 - Issy - 2 July 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup description="" file="MB02 Cesanne.vsav" isMenu="false" name="MB02 - Césanne (Cesana-Torinese) - 21 June 1815" useFile="true"/>
