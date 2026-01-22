@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="with fan scenarios" ModuleOther2="&lt;br&gt;by Mark Benson from prior module by Michel Dippel&lt;br&gt;Block piece graphics prepared by Alessandro Crespi&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.7.18" description="New graphics, card play automation, Combat Assist and more! See Help... to get started." name="Commands &amp; Colors: Napoleonics V5" nextPieceSlotId="5988" version="5.1.0-beta16">
+<VASSAL.build.GameModule ModuleOther1="with fan scenarios" ModuleOther2="&lt;br&gt;by Mark Benson from prior module by Michel Dippel&lt;br&gt;Block piece graphics prepared by Alessandro Crespi&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.7.18" description="New graphics, card play automation, Combat Assist and more! See Help... to get started." name="Commands &amp; Colors: Napoleonics V5" nextPieceSlotId="5988" version="5.1.0-beta17">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Chatter/>
     <VASSAL.build.module.KeyNamer/>
+    <VASSAL.build.module.folder.ModuleSubFolder desc="" name="Change Log beta17">
+        <VASSAL.build.module.folder.ModuleSubFolder desc="#489 Remove GG02 bad file / re-direct PDS/SB to correct GG02 &amp; YK01" name="001"/>
+    </VASSAL.build.module.folder.ModuleSubFolder>
     <VASSAL.build.module.folder.ModuleSubFolder desc="" name="Change Log beta16">
         <VASSAL.build.module.folder.ModuleSubFolder desc="#464 Combat at Aire - ford allows movement. Buchan misspelt." name="001"/>
         <VASSAL.build.module.folder.ModuleSubFolder desc="#345 Tolentino scenario" name="001"/>
@@ -4727,7 +4730,7 @@
                 <VASSAL.build.module.PredefinedSetup file="MD22 - Bar-Sur-Aube.vsav" isMenu="false" name="MD22 - Bar-Sur-Aube - 27 February 1814" useFile="true"/>
             </VASSAL.build.module.PredefinedSetup>
             <VASSAL.build.module.PredefinedSetup isMenu="true" name="Seventh Coalition (1815)" useFile="true">
-                <VASSAL.build.module.PredefinedSetup file="GG02 - Waterloo.vsav" isMenu="false" name="GG02 - Waterloo (All In One) - 18 June 1815" useFile="true"/>
+                <VASSAL.build.module.PredefinedSetup file="GG02-Waterloo.vsav" isMenu="false" name="GG02 - Waterloo (All In One) - 18 June 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="KB01 - Quatre Bras.vsav" isMenu="false" name="KB01 - Quatre Bras - 16 June 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup file="MB01 - Issy July 2nd 1815.vsav" isMenu="false" name="MB01 - Issy - 2 July 1815" useFile="true"/>
                 <VASSAL.build.module.PredefinedSetup description="" file="MB02 Cesanne.vsav" isMenu="false" name="MB02 - Césanne (Cesana-Torinese) - 21 June 1815" useFile="true"/>
@@ -5002,7 +5005,7 @@
             <napoleonics.Scenario banners="5" codex="HR01" date="1862-05-05" file="HR01 - Puebla" name="Puebla (2nd Franco-Mexican War)" official="false" period="Uncategorised" set="Miscellaneous" team1="Mexican" team2="French" type="normal" winner=""/>
             <napoleonics.Scenario banners="8" codex="LC02" date="1815-05-09" file="LC02 - Saratoga (2nd day)" name="Saratoga (2nd Day)" official="false" period="Uncategorised" set="Miscellaneous" team1="British" team2="French" type="normal" winner=""/>
             <napoleonics.Scenario banners="15" codex="CS01" date="1807-06-14" file="redirectEpic" name="Friedland" official="false" period="1806-1807: Fourth Coalition" set="Miscellaneous" team1="Russian" team2="French" type="epic [alternate module]" winner="French"/>
-            <napoleonics.Scenario banners="6" codex="YK01" date="1809-05-13" file="YK01 Worgl" name="Wörgl" official="false" period="1809: Fifth Coalition" set="Miscellaneous" team1="Austrian" team2="Bavarian" type="normal" winner="French"/>
+            <napoleonics.Scenario banners="6" codex="YK01" date="1809-05-13" file="YK01 - Worgl" name="Wörgl" official="false" period="1809: Fifth Coalition" set="Miscellaneous" team1="Austrian" team2="Bavarian" type="normal" winner="French"/>
             <napoleonics.Scenario banners="20" codex="YK02" date="1809-07-06" file="redirectEpic" name="Wagram French Left, Day 2" official="false" period="1809: Fifth Coalition" set="Miscellaneous" team1="Austrian" team2="French" type="epic [alternate module]" winner="French"/>
             <VASSAL.build.module.folder.ModuleSubFolder desc="David &amp; Micheal Pitts (AWI only)" name="DP Series">
                 <napoleonics.Scenario banners="7" codex="DP01" date="1780-08-16" file="redirectV34" name="Camden" official="false" period="Uncategorised" set="Miscellaneous" team1="American" team2="British" type="normal [v3.4 module]" winner=""/>
