@@ -250,23 +250,23 @@ def f15_squares_and_unorder(b):
     b.edit_proto('Hex Control',fn,'Unorder and UnSquare on the hex; no move map for a square')
 
 CHANGELOG=[
- ('005','189 P&amp;C: grid-location Send To traits given a board name - move grid is laid and units move (also fixes Take Ground, CFR and Breakthrough moves in D&amp;D)'),
- ('005','189 P&amp;C: move-map reset clears stale paths on all hex controllers (unit next to a moving unit could not be ordered)'),
- ('005','189 P&amp;C: click move sets the unit stopped flag from the terrain (Take Ground / Cavalry Forward)'),
- ('005','189 P&amp;C: hex click orders the unit, not the attached leader'),
- ('005','189 P&amp;C: click move spends the movement allowance (no second full move)'),
- ('005','189 P&amp;C: each move map starts clean - Undo no longer leaves a broken map'),
- ('005','189 P&amp;C: clicking a hex with an unshaded path orders/shows instead of doing nothing'),
- ('005','189 P&amp;C: drags also sent back in the Movement phase (unchecked moves); message updated'),
- ('005','189 P&amp;C: reloading a saved game no longer switches Drag &amp; Drop movement checks back on'),
- ('005','189 P&amp;C: unit with attached leader both ordered by a card (e.g. Assault) now shows its move map'),
- ('005','189 P&amp;C: right-click Move Leader on the hex moves an attached leader on his own'),
- ('005','189 P&amp;C: leader move map starts from the leader hex (was seeded from a random neighbour)'),
- ('005','189 P&amp;C: unit moves before its attached leader - no stray leader order, no Bayonet Charge / Force March alerts'),
- ('005','189 P&amp;C: hex right-click Unorder and UnSquare; a unit in square gets no move map'),
- ('005','189 Take Ground / CFR: unit or leader that had click-moved 2+ hexes failed to move (moveStep loop index)'),
+ ('005','505 P&amp;C: grid-location Send To traits given a board name - move grid is laid and units move (also fixes Take Ground, CFR and Breakthrough moves in D&amp;D)'),
+ ('005','506 P&amp;C: move-map reset clears stale paths on all hex controllers (unit next to a moving unit could not be ordered)'),
+ ('005','507 P&amp;C: click move sets the unit stopped flag from the terrain (Take Ground / Cavalry Forward)'),
+ ('005','508 P&amp;C: hex click orders the unit, not the attached leader'),
+ ('005','509 P&amp;C: click move spends the movement allowance (no second full move)'),
+ ('005','510 P&amp;C: each move map starts clean - Undo no longer leaves a broken map'),
+ ('005','511 P&amp;C: clicking a hex with an unshaded path orders/shows instead of doing nothing'),
+ ('005','512 P&amp;C: drags also sent back in the Movement phase (unchecked moves); message updated'),
+ ('005','513 P&amp;C: reloading a saved game no longer switches Drag &amp; Drop movement checks back on'),
+ ('005','514 P&amp;C: unit with attached leader both ordered by a card (e.g. Assault) now shows its move map'),
+ ('005','515 P&amp;C: right-click Move Leader on the hex moves an attached leader on his own'),
+ ('005','516 Take Ground / CFR: unit or leader that had click-moved 2+ hexes failed to move (moveStep loop index)'),
+ ('005','517 P&amp;C: leader move map starts from the leader hex (was seeded from a random neighbour)'),
+ ('005','518 P&amp;C: unit moves before its attached leader - no stray leader order, no Bayonet Charge / Force March alerts'),
+ ('005','519 P&amp;C: hex right-click Unorder and UnSquare; a unit in square gets no move map'),
 ]
-VERSION='5.1.0-a19.079'
+VERSION='5.1.0-a19.080'
 def apply(upto=None, out='bf_work.xml', vmod='work.vmod', release=False):
     b=Build('/home/claude/vmod/x/buildFile.xml')
     for f in FIXES[:upto]: f(b)

@@ -1,11 +1,12 @@
 CCN v5 - Point & Click movement fixes (GitHub #189)
-Module: CCNapoleonics5_1_0alpha.vmod, version 5.1.0-a19.079 (built from 5.1.0DEV a19.075)
+Module: CCNapoleonics5_1_0alpha.vmod, version 5.1.0-a19.080 (built from 5.1.0DEV a19.075)
 Change log: Change Log > beta18 > 005 (15 entries)
 Tested headless with VASSAL 3.7.26, Corunna (B004), Solitaire.
 
 The demo saves (PC01-PC13) were made with the alpha. Each save's comment gives its test steps.
 PC01-PC09 were made with a19.076 and still apply; PC10-PC13 with a19.079.
-All of this is logged on GitHub as #504 (follow-up to #189).
+On GitHub: fix N is issue #(504+N) - fix 1 = #505 ... fix 15 = #519 - tracked in #504, milestone 5.1.0-beta19.
+The module change log entries carry the same issue numbers (a19.080; a19.079 used 189 for all).
 
 1  Grid-location Send To traits had no board name, so VASSAL never moved the piece:
    the P&C grid was never laid (Setup Board), units never walked their path (Move Action),
