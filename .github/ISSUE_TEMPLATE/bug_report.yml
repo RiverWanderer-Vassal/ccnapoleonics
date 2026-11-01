@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a fault in the Commands & Colors Napoleonics VASSAL module. Use Help > Report an Issue in the module to fill in the version and game details automatically.
+title: "[version] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a fault. The more of this you can fill in, the faster it can be fixed.
+        **Best of all: attach a saved game (`.vsav`) or log (`.vlog`) from just before the fault.** GitHub only accepts some file types, so rename it to `.zip` first, then drag it into the "Files" box below.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe the fault, including any message that appeared.
+      placeholder: e.g. Clicking the hex of my ordered unit showed no move map.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The steps that lead to the fault, starting from a scenario or saved game.
+      placeholder: |
+        1. Load scenario ...
+        2. Play card ...
+        3. Click ...
+    validations:
+      required: false
+  - type: textarea
+    id: files
+    attributes:
+      label: Files
+      description: Drag your saved game or log here (renamed to .zip). Screenshots are welcome too.
+    validations:
+      required: false
+  - type: textarea
+    id: errors
+    attributes:
+      label: Error messages
+      description: |
+        Paste any "Bad Data" lines from the chat window, and the last lines of VASSAL's error log.
+        To open the error log: in the VASSAL Module Manager, choose Help > Show Error Log.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: version
+    attributes:
+      label: Module, VASSAL and computer
+      description: Filled in automatically when you use Help > Report an Issue in the module.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario
+      description: Filled in automatically from the module.
+    validations:
+      required: false
+  - type: textarea
+    id: state
+    attributes:
+      label: Game state when reported
+      description: Filled in automatically from the module (turn, phase, card in play, movement rules, game mode). If the fault happened earlier, say so above.
+      render: text
+    validations:
+      required: false

@@ -10,7 +10,7 @@ The standard-size (13 × 9 hex) VASSAL module for GMT Games' *Commands & Colors:
   * `dev`: development builds and unreleased betas;
   * `pc-alpha`: Point & Click movement fixes (see issue #504).
 * Build with `./mvnw package` (module written to `target/`).
-* Report problems with an issue here, or from the module's Help menu.
+* Report problems from the module (Help > Report an Issue): it opens the bug form here with the module, VASSAL, Java, scenario and game-state details filled in. New reports get an automated first look by Claude (see `tools/triage/`).
 
 The Epic & Grand Battles module is in [ccnapoleonicsEpic](https://github.com/RiverWanderer-Vassal/ccnapoleonicsEpic).
 
