@@ -1,0 +1,112 @@
+CCN v5 - Point & Click movement fixes (GitHub #189)
+Module: CCNapoleonics5_1_0alpha.vmod, version 5.1.0-a19.079 (built from 5.1.0DEV a19.075)
+Change log: Change Log > beta18 > 005 (15 entries)
+Tested headless with VASSAL 3.7.26, Corunna (B004), Solitaire.
+
+The demo saves (PC01-PC13) were made with the alpha. Each save's comment gives its test steps.
+PC01-PC09 were made with a19.076 and still apply; PC10-PC13 with a19.079.
+All of this is logged on GitHub as #504 (follow-up to #189).
+
+1  Grid-location Send To traits had no board name, so VASSAL never moved the piece:
+   the P&C grid was never laid (Setup Board), units never walked their path (Move Action),
+   and Target Controls couldn't re-attach.
+   NB: Move Action is also used by Take Ground, CFR and Breakthrough, so in DEV Take Ground didn't
+   move the unit in Drag & Drop mode either (it was marked Stop/No Battle and stayed put).
+   Demo: PC01
+2  When a move map was cleared, hexes that had a path but weren't shaded (e.g. a friendly unit's hex)
+   kept the path, so clicking that unit "moved" instead of ordering it.
+   The reset now clears every hex controller. Demo: PC02
+3  A P&C move set MarkerLevel but never 'stopped' (D&D does), which Take Ground and Cavalry Forward
+   read. 'stopped' is now set from the destination icon. Demo: PC03
+4  A hex with a unit plus an attached leader could never be ordered: the click went to the leader
+   (filter LDR == CountLocation("LDR")). It now goes to the unit; a lone leader still gets it. Demo: PC04
+5  After a P&C move the unit kept its full allowance, so a re-click gave a second full move
+   (FA under Bombard: 3 + 3 hexes). maxMove is now set to 0 after the move, so a re-click shows only the
+   unit's own hex. Cavalry Forward's maxMove+1 then gives exactly 1 extra hex. Demo: PC05
+6  The move-map shading (Area of Effect "path") is local only, so Undo can't switch it off: after Undo
+   every hex stayed path_Active and the next map was broken. Each new map now clears leftover
+   shading and paths first. Demo: PC06
+7  A click on a hex with an unshaded path (left by Undo) did nothing. clickCase now counts it as a move
+   only if the hex is shaded. Demo: PC07
+8  In the Movement phase, drags were unchecked (rawMoveCase 9). A unit moved by click is unmasked, so it
+   could be dragged anywhere. Drags are now sent back in the Movement phase as well as the Orders phase,
+   except the click move's own steps. This includes leaders, so a stack goes back together.
+   Message text: "...barred during the Orders and Movement phases." Demo: PC08
+9  Every session launch (load or join) runs ghkInitialise, which reset gMoveDrag to true, so a reloaded
+   P&C game ran D&D checks on every click move, and moves were marked No Entry.
+   gMoveDrag now defaults to true only before the game starts; after that it follows gMoveRules.
+   Demo: PC09
+10 When a card orders both a unit and its attached leader (e.g. Assault Left Flank), a click on the hex
+   sent "move" to both: the unit's map was placed, then the leader's widget replaced it and removed
+   itself, so no map appeared. The show-moves click now goes to the unit when one is present, and to
+   the leader only when he is alone (same rule as fix 4). Demo: PC10
+11 An attached leader couldn't move on his own in P&C (clicks go to the unit, drags are barred).
+   The older hex control had a right-click "Select Leader Move"; only its hide rule was left.
+   It is back as right-click > "Move Leader" on the hex. It:
+   - removes any move map on show (the leader's widget would otherwise remove itself on the same hex);
+   - orders the leader if he isn't yet, with his own Order Leader command (takes an order and detaches
+     him, exactly as dragging him away does in D&D);
+   - shows the leader's own move map; clicking a shaded hex moves him alone.
+   It is shown only in the Orders/Movement phases, with P&C on, when an ordered unit is in the hex and
+   the leader hasn't moved away yet. It is hidden when the leader is unordered and no orders are left
+   (in D&D that drag gives "Orders limit exceeded"; in P&C the Order Leader swap left the unit
+   unordered with gOrders at -1). Demo: PC11
+12 Take Ground and CFR moved the unit (and an attached leader) by sending Move Action's moveStep key
+   directly. moveStep's Send To reads the hex from path.substring(loc, loc + 3), where loc is the index
+   of the movePath loop. VASSAL keeps that index in memory after the loop, so a unit or leader that had
+   earlier click-moved 2+ hexes had loc = 3 or 6: the substring failed ("Expression evaluation error",
+   then "Grid location not found" - exactly your Spanish Leader report) and the piece stayed put.
+   They now send movePath, which runs the same Send To once with loc reset to 0.
+   Reproduced headless: Light Infantry I10 -> I12 by click, then Take Ground to I13: errors and no move
+   before; moves to I13 after. D&D Take Ground still works.
+   No demo save: the loop index is not saved with the game, so a reloaded save can't show the fault.
+   To see it live: click-move a light infantry or cavalry unit 2+ hexes, then win a combat with it and
+   click Take Ground.
+13 The leader's move map attached its hexes with the rule "not a hex holding a leader", and the
+   exception meant to let in his own hex compared UniqueID (never equal for a hex) instead of
+   LocationName as the unit map does. So the map never started from the leader's hex: it grew from
+   whichever neighbouring hex VASSAL happened to seed (it varied between runs), and paths missed the
+   first step. The leader's own hex is now included. Demo: PC11 (map from B09, 3 hexes)
+   Checked against D&D from B09 (Merle) and C08 (lone leader): same reach, same stops
+   (forest/town hexes stop him), passes through friendly units, 4th hex refused.
+
+14 A click move sent movePath to the unit and its attached leader in one Global Key Command, and VASSAL
+   doesn't fix the order in which they get it. When the leader happened to go first he stepped away from
+   his unit, so his own checks treated it as a separate leader move: he was marked ordered and took an
+   extra order ("Orders limit exceeded"), and cards that order only one unit type raised their alert for
+   him - Bayonet Charge and Force March ("Command card orders Infantry only"), and likewise Cavalry
+   Charge, Bombard etc. It happened on about half the moves, which is why it looked random.
+   The unit now always moves first and the leader joins it. Take Ground and CFR also send the unit first.
+   Checked with Bayonet Charge's order scope: a19.078 gave the alert in 2 of 4 identical moves; a19.079
+   gave none in 14. No demo save (the old fault was random). PC10 shows the stack moving with no extra order.
+15 Squares and unordering in P&C. The hex control covers the army pieces, so their own right-click
+   commands (Order toggle, UnSquare) can't be reached, and the hex's Order is hidden once ordered.
+   A square also got a move map, though the rules say a square may not move.
+   - Right-click > Unorder on the hex: clears any move map on show and gives back the orders of every
+     piece in the hex that hasn't moved (unit and leader), as the Order toggle does in D&D.
+   - Right-click > UnSquare on the hex (ordered unit in square): starts the Movement phase - as showing a
+     move map does, because the unit's UnSquare works only then - and sends the unit's own UnSquare.
+     Not offered while enemy cavalry is adjacent (the unit's own rule).
+   - A unit in square gets no move map when its hex is clicked.
+   After UnSquare the unit may move that turn (same as its UnSquare in D&D) - confirmed as the rule. Demos: PC12 (square, no cavalry), PC13 (square next to enemy cavalry).
+   In your Bailen game the two squares were next to the French Light Cavalry at E13, so they couldn't
+   leave square; what was missing was Unorder.
+
+Checked and matching Drag & Drop (same unit moved both ways, step by step, compared by MarkerLevel,
+stopped and destinations):
+  Line Inf, Line Inf + leader, Light Inf, Foot Art (Bombard, 3 hexes, no battle), Heavy Cav (Flank Attack),
+  lone leader, leader moving away from his unit (fix 11), Allies turn after End Turn, Take Ground (both modes).
+  Regression: a D&D sequence (order, drag, End Turn, unit properties) gives identical results on DEV and
+  alpha a19.076. Fixes 10, 11 and 13 change only P&C traits; fix 12 also touches D&D Take Ground, which
+  was rechecked on a19.078.
+
+Notes / for your call
+- Move Leader is a menu command, not a click: a left click on a unit + leader hex always means the unit
+  (order it, show its map, move the stack). Tell me if you'd rather have a click toggle instead.
+- Dragging a stack gives two "barred" alerts (one per piece). This is existing behaviour.
+- After a P&C move the unit keeps path = its last path until the next one. It's harmless; fix 8 uses it.
+- #197 Fieldworks in P&C is still not implemented (not touched).
+- Still open from your a19.076 play-test: "Orders limit exceeded" with Leadership and Forward - fix 14
+  removes the leader double count, which is the likely cause; still to be rechecked with those cards.
+- Fix 11's command key was renamed internally (gkcMoveLeader): the hex already had an unused GKC called
+  gkcSelectLdrMove that would have fired as well.
