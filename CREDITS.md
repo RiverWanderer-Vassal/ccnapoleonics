@@ -9,8 +9,8 @@ Core game images are © GMT Games LLC (module "About" text, v4 and later). The g
 ## Module authors, by version
 | Version | Who | Source |
 |---|---|---|
-| 1.x (1.41, 1.42) | Alexander331bc | Vassal Module Library uploader |
-| 2.x (2.5) | Bayernkini | Vassal Module Library uploader; fan-scenario extension |
+| 1.x (1.41, 1.42) | **Joel Toppen** (Alexander331bc) | Vassal Module Library |
+| 2.x (2.5) | **Michel Dippel** (Bayernkini); also the fan-scenario extension | Vassal Module Library |
 | 3.x | **Michel Dippel**: module design & development | module credits (v4 About text; v5 Credits) |
 | 3.42–3.43 maintenance, 4.x, 5.x | **Mark Benson** (marktb1961): module design & development | module credits; Vassal Module Library |
 | Project co-owner | Mark McGilchrist (Mark_McG) | Vassal Module Library; scenario designer (MM series) |
