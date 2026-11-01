@@ -1,6 +1,6 @@
 CCN v5 - Point & Click movement fixes (GitHub #189)
-Module: CCNapoleonics5_1_0alpha.vmod, version 5.1.0-a19.080 (built from 5.1.0DEV a19.075)
-Change log: Change Log > beta18 > 005 (15 entries)
+Module: CCNapoleonics5_1_0alpha.vmod, version 5.1.0-a19.081 (built from 5.1.0DEV a19.075)
+Change log: Change Log > beta18 > 005 (16 entries)
 Tested headless with VASSAL 3.7.26, Corunna (B004), Solitaire.
 
 The demo saves (PC01-PC13) were made with the alpha. Each save's comment gives its test steps.
@@ -92,6 +92,13 @@ The module change log entries carry the same issue numbers (a19.080; a19.079 use
    After UnSquare the unit may move that turn (same as its UnSquare in D&D) - confirmed as the rule. Demos: PC12 (square, no cavalry), PC13 (square next to enemy cavalry).
    In your Bailen game the two squares were next to the French Light Cavalry at E13, so they couldn't
    leave square; what was missing was Unorder.
+
+16 Help > Report an Issue (#536): opens GitHub's new bug form with the module, VASSAL, Java and OS
+   versions, maximum heap, scenario and the game state (turn, phase, active side, card in play, order
+   scope, orders left, movement rules, player side, Solitaire/offline, dice widget) filled in.
+   It also fixes the old link adding alpha/beta to the assignees instead of the labels.
+   The form and an automated Claude triage of new issues are in pull request #537 (needs merging to main,
+   and the ANTHROPIC_API_KEY repository secret for the triage).
 
 Checked and matching Drag & Drop (same unit moved both ways, step by step, compared by MarkerLevel,
 stopped and destinations):

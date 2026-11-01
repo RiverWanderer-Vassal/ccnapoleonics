@@ -165,21 +165,21 @@
             <VASSAL.build.module.folder.ModuleSubFolder desc="491b Fix for v4 conversion  - Orders Helper was missing (order counts &amp; card bonus settings)" name="002"/>
             <VASSAL.build.module.folder.ModuleSubFolder desc="495 Fix Replace with Other target on impassable river Y-junction piece" name="003"/>
             <VASSAL.build.module.folder.ModuleSubFolder desc="496 Scenario S104 a HA should be FA." name="004"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: grid-location Send To traits given a board name - move grid is laid and units move (also fixes Take Ground, CFR and Breakthrough moves in D&amp;D)" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: move-map reset clears stale paths on all hex controllers (unit next to a moving unit could not be ordered)" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: click move sets the unit stopped flag from the terrain (Take Ground / Cavalry Forward)" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: hex click orders the unit, not the attached leader" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: click move spends the movement allowance (no second full move)" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: each move map starts clean - Undo no longer leaves a broken map" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: clicking a hex with an unshaded path orders/shows instead of doing nothing" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: drags also sent back in the Movement phase (unchecked moves); message updated" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: reloading a saved game no longer switches Drag &amp; Drop movement checks back on" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: unit with attached leader both ordered by a card (e.g. Assault) now shows its move map" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: right-click Move Leader on the hex moves an attached leader on his own" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: leader move map starts from the leader hex (was seeded from a random neighbour)" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: unit moves before its attached leader - no stray leader order, no Bayonet Charge / Force March alerts" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 P&amp;C: hex right-click Unorder and UnSquare; a unit in square gets no move map" name="005"/>
-            <VASSAL.build.module.folder.ModuleSubFolder desc="189 Take Ground / CFR: unit or leader that had click-moved 2+ hexes failed to move (moveStep loop index)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="505 P&amp;C: grid-location Send To traits given a board name - move grid is laid and units move (also fixes Take Ground, CFR and Breakthrough moves in D&amp;D)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="506 P&amp;C: move-map reset clears stale paths on all hex controllers (unit next to a moving unit could not be ordered)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="507 P&amp;C: click move sets the unit stopped flag from the terrain (Take Ground / Cavalry Forward)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="508 P&amp;C: hex click orders the unit, not the attached leader" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="509 P&amp;C: click move spends the movement allowance (no second full move)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="510 P&amp;C: each move map starts clean - Undo no longer leaves a broken map" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="511 P&amp;C: clicking a hex with an unshaded path orders/shows instead of doing nothing" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="512 P&amp;C: drags also sent back in the Movement phase (unchecked moves); message updated" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="513 P&amp;C: reloading a saved game no longer switches Drag &amp; Drop movement checks back on" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="514 P&amp;C: unit with attached leader both ordered by a card (e.g. Assault) now shows its move map" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="515 P&amp;C: right-click Move Leader on the hex moves an attached leader on his own" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="516 Take Ground / CFR: unit or leader that had click-moved 2+ hexes failed to move (moveStep loop index)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="517 P&amp;C: leader move map starts from the leader hex (was seeded from a random neighbour)" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="518 P&amp;C: unit moves before its attached leader - no stray leader order, no Bayonet Charge / Force March alerts" name="005"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="519 P&amp;C: hex right-click Unorder and UnSquare; a unit in square gets no move map" name="005"/>
         </VASSAL.build.module.folder.ModuleSubFolder>
         <VASSAL.build.module.folder.ModuleSubFolder desc="" name="beta17">
             <VASSAL.build.module.folder.ModuleSubFolder desc="#489 Remove GG02 bad file / re-direct PDS/SB to correct GG02 &amp; YK01" name="001"/>

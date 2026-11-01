@@ -249,6 +249,37 @@ def f15_squares_and_unorder(b):
         return T,S
     b.edit_proto('Hex Control',fn,'Unorder and UnSquare on the hex; no move map for a square')
 
+@fix
+def f16_report_issue_diagnostics(b):
+    """Help > Report an Issue opened a plain GitHub issue with only the module/VASSAL versions and scenario, and added
+    alpha/beta to the assignees instead of the labels. It now opens the repository's structured bug form
+    (.github/ISSUE_TEMPLATE/bug_report.yml) with the environment and game state filled in (#536)."""
+    E='java.net.URLEncoder.encode'
+    def q(name, expr): return '"&'+name+'=" + '+E+'('+expr+', "UTF-8")'
+    env=('"Module " + ModuleVersion + "\\n" + "VASSAL " + VassalVersionRunning + "\\n" + '
+         '"Java " + java.lang.System.getProperty("java.version") + " (" + java.lang.System.getProperty("java.vendor") + ")\\n" + '
+         '"OS " + java.lang.System.getProperty("os.name") + " " + java.lang.System.getProperty("os.version") + " " + java.lang.System.getProperty("os.arch") + "\\n" + '
+         '"Max heap " + (java.lang.Runtime.getRuntime().maxMemory() / 1048576) + " MB"')
+    scen=('(buildMode ? "build mode" : scenarioName + " (" + codex + ") https://www.commandsandcolors.net/napoleonics/maps/" + '
+          '(codex.equals("") ? "" : (codex.length() < 3 ? "0".repeat(3 - codex.length()) : "") + codex + ".html"))')
+    phase='(gPhase == COMMAND ? "Command" : gPhase == ORDER ? "Order" : gPhase == MOVEMENT ? "Movement" : gPhase == COMBAT ? "Combat" : gPhase == DRAW ? "Draw" : "other") + " (" + gPhase + ")"'
+    state=('"Game started: " + gGameStarted + "\\n" + "Turn: " + gTurn + "\\n" + "Phase: " + '+phase+' + "\\n" + '
+           '"Active side: " + gActiveSide + "\\n" + "Combat lead: " + gCombatLead + "\\n" + '
+           '"Card in play: " + activeCard + "\\n" + "Order scope: " + gCmdScope + "\\n" + "Orders left: " + gOrders + "\\n" + '
+           '"Movement rules: " + gMoveRules + "\\n" + "Player side: " + PlayerSide + "\\n" + '
+           '"Solitaire: " + isSolitaire + "\\n" + "Offline: " + isOffline + "\\n" + "Dice widget: " + gDiceControl')
+    label='(ModuleVersion =~ ".*[bB]eta.*" ? "bug,beta" : ModuleVersion =~ ".*[0-9-]a[0-9].*" ? "bug,alpha" : "bug")'
+    expr=('{"https://github.com/RiverWanderer-Vassal/ccnapoleonics/issues/new?template=bug_report.yml" + '
+          +q('labels',label)+' + '+q('title','"[" + ModuleVersion + "] "')+' + '
+          +q('version',env)+' + '+q('scenario',scen)+' + '+q('state',state)+'}')
+    import re as _re
+    from xml.sax.saxutils import quoteattr
+    m=_re.search(r'<VASSAL\.build\.module\.documentation\.BrowserHelpFile startingPage="([^"]*)" title="Report an Issue[^"]*"/>', b.raw)
+    assert m, 'Report an Issue link not found'
+    newattr=expr.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('"','&quot;')
+    b.raw=b.raw[:m.start(1)]+newattr+b.raw[m.end(1):]
+    b.log.append('Report an Issue: opens the bug form with diagnostics (#536)')
+
 CHANGELOG=[
  ('005','505 P&amp;C: grid-location Send To traits given a board name - move grid is laid and units move (also fixes Take Ground, CFR and Breakthrough moves in D&amp;D)'),
  ('005','506 P&amp;C: move-map reset clears stale paths on all hex controllers (unit next to a moving unit could not be ordered)'),
@@ -265,8 +296,9 @@ CHANGELOG=[
  ('005','517 P&amp;C: leader move map starts from the leader hex (was seeded from a random neighbour)'),
  ('005','518 P&amp;C: unit moves before its attached leader - no stray leader order, no Bayonet Charge / Force March alerts'),
  ('005','519 P&amp;C: hex right-click Unorder and UnSquare; a unit in square gets no move map'),
+ ('005','536 Report an Issue opens the GitHub bug form with module, Java, scenario and game-state details; labels fixed'),
 ]
-VERSION='5.1.0-a19.080'
+VERSION='5.1.0-a19.081'
 def apply(upto=None, out='bf_work.xml', vmod='work.vmod', release=False):
     b=Build('/home/claude/vmod/x/buildFile.xml')
     for f in FIXES[:upto]: f(b)
