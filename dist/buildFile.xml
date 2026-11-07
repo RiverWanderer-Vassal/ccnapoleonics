@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<VASSAL.build.GameModule ModuleOther1="with fan scenarios" ModuleOther2="&lt;br&gt;by Mark Benson from prior module by Michel Dippel&lt;br&gt;Block piece graphics prepared by Alessandro Crespi&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.7.26" description="New graphics, card play automation, Combat Assist and more! See Help... to get started." name="Commands &amp; Colors: Napoleonics V5" nextPieceSlotId="5988" version="5.1.0-beta18">
+<VASSAL.build.GameModule ModuleOther1="with Community scenarios" ModuleOther2="&lt;br&gt;by Mark Benson from prior module by Michel Dippel&lt;br&gt;Block piece graphics prepared by Alessandro Crespi&lt;br&gt;Core game images (c) GMT Games LLC." VassalVersion="3.8.0" description="New graphics, card play automation, Combat Assist and more! See Help... to get started." name="Commands &amp; Colors: Napoleonics V5" nextPieceSlotId="5988" version="5.2.0-a01">
     <VASSAL.build.module.BasicCommandEncoder/>
     <VASSAL.build.module.Chatter/>
     <VASSAL.build.module.KeyNamer/>
     <VASSAL.build.module.folder.ModuleSubFolder desc="" name="Change Log">
+        <VASSAL.build.module.folder.ModuleSubFolder desc="" name="5.2.0">
+            <VASSAL.build.module.folder.ModuleSubFolder desc="546 Set-ups saved in VASSAL 3.8&apos;s format (XZ): module about 304 MB to about 35 MB; the game text is unchanged. Needs VASSAL 3.8." name="a01"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="546 Module description: with Community scenarios (was fan)." name="a01"/>
+        </VASSAL.build.module.folder.ModuleSubFolder>
         <VASSAL.build.module.folder.ModuleSubFolder desc="" name="beta18">
             <VASSAL.build.module.folder.ModuleSubFolder desc="493 Support URL links to scenario page directly." name="001"/>
             <VASSAL.build.module.folder.ModuleSubFolder desc="492 A306 missing hill" name="001"/>
