@@ -6,11 +6,11 @@
     <!-- name and version of the module -->
     <groupId>CCNapoleonics</groupId>
     <artifactId>CCNapoleonics</artifactId>
-    <version>5.1.0-beta18</version>
+    <version>5.2.0-a01</version>
 
     <properties>
         <!-- set Vassal version here -->
-        <vassal.version>3.7.0</vassal.version>
+        <vassal.version>3.8.0</vassal.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
