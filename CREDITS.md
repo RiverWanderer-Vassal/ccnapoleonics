@@ -33,6 +33,12 @@ Core game images are © GMT Games LLC (module "About" text, v4 and later). The g
 - The **Vassal development team**, for the engine the module relies on.
 
 ## Licence
-The module has no licence of its own. `LICENSE` is the **GNU Lesser General Public License v2.1**, the licence of the [Vassal engine](https://vassalengine.org). It applies to the module's own configuration and code (buildFile, scripts, custom classes), as for Vassal. It does not apply to GMT Games' content or to the third-party material listed above, which keep their own terms.
+The module is licensed under **[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)**, as stated on its page in the [VASSAL Module Library](https://vassalengine.org/library/projects/Commands__Colors_Napoleonics). The full text is in `LICENSE`.
+- It covers the module's own configuration, code and original material (buildFile, scripts, custom classes).
+- It does **not** cover GMT Games' content or the third-party material listed above, which keep their own terms.
+- Anyone who shares an adapted version must credit the authors and license it under CC BY-SA 4.0 too.
+- For use on other terms (for example, in a commercial product that cannot carry these terms), contact Mark Benson about a separate licence.
+
+Earlier copies of this repository carried the GNU LGPL 2.1 file (the Vassal engine's licence). The module's licence is the one stated on the VASSAL Module Library page.
 
 Corrections and additions are welcome: open an issue.
