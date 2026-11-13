@@ -8,6 +8,7 @@ body:
       value: |
         Thanks for reporting a fault. The more of this you can fill in, the faster it can be fixed.
         **Best of all: attach a saved game (`.vsav`) or log (`.vlog`) from just before the fault.** GitHub only accepts some file types, so rename it to `.zip` first, then drag it into the "Files" box below.
+        Anything you attach or suggest here may be used by Mark Benson under any licence (see CONTRIBUTING.md).
   - type: textarea
     id: what
     attributes:

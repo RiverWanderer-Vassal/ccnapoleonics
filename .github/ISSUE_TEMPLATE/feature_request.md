@@ -18,3 +18,5 @@ A clear and concise description of any alternative solutions or features you've 
 
 **Additional context**
 Add any other context or screenshots about the feature request here.
+
+_Anything you attach or suggest here may be used by Mark Benson under any licence (see CONTRIBUTING.md)._
