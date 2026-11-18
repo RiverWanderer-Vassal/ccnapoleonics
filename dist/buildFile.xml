@@ -4,6 +4,11 @@
     <VASSAL.build.module.Chatter/>
     <VASSAL.build.module.KeyNamer/>
     <VASSAL.build.module.folder.ModuleSubFolder desc="" name="Change Log">
+        <VASSAL.build.module.folder.ModuleSubFolder desc="" name="beta19">
+            <VASSAL.build.module.folder.ModuleSubFolder desc="555 Craufurd and Delaborde spelt as in the books (B002, B004, B006, B008, PM03, WO01)." name="001"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="556 B015 Waterloo: Impetuous British Cavalry is an optional rule (2026 revision); MD15 unchanged." name="001"/>
+            <VASSAL.build.module.folder.ModuleSubFolder desc="557 Player Aids: the 2026 Combat Tables (Note 5 adds Cossacks)." name="001"/>
+        </VASSAL.build.module.folder.ModuleSubFolder>
         <VASSAL.build.module.folder.ModuleSubFolder desc="" name="beta18">
             <VASSAL.build.module.folder.ModuleSubFolder desc="493 Support URL links to scenario page directly." name="001"/>
             <VASSAL.build.module.folder.ModuleSubFolder desc="492 A306 missing hill" name="001"/>
@@ -4061,6 +4066,11 @@
                 </VASSAL.build.widget.TabWidget>
                 <VASSAL.build.widget.PanelWidget entryName="Shortcuts" fixed="false" nColumns="3" scale="1.0" vert="false">
                     <VASSAL.build.widget.Chart chartName="Shortcuts" fileName="Shortcuts v5.jpg"/>
+                </VASSAL.build.widget.PanelWidget>
+            </VASSAL.build.widget.TabWidget>
+            <VASSAL.build.widget.TabWidget entryName="Combat">
+                <VASSAL.build.widget.PanelWidget entryName="Combat Tables" fixed="false" nColumns="3" scale="1.0" vert="false">
+                    <VASSAL.build.widget.Chart chartName="Combat Tables" description="2026 Ranged Fire and Melee Tables; Note 5 adds Cossacks (#557)" fileName="charts_CombatTables.jpg"/>
                 </VASSAL.build.widget.PanelWidget>
             </VASSAL.build.widget.TabWidget>
             <VASSAL.build.widget.TabWidget entryName="Terrain">
