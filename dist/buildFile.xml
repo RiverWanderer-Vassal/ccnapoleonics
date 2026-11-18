@@ -2117,6 +2117,11 @@
                     <VASSAL.build.widget.Chart chartName="Shortcuts" fileName="Shortcuts v4.jpg"/>
                 </VASSAL.build.widget.PanelWidget>
             </VASSAL.build.widget.TabWidget>
+            <VASSAL.build.widget.TabWidget entryName="Combat">
+                <VASSAL.build.widget.PanelWidget entryName="Combat Tables" fixed="false" nColumns="3" scale="1.0" vert="false">
+                    <VASSAL.build.widget.Chart chartName="Combat Tables" description="2026 Ranged Fire and Melee Tables; Note 5 adds Cossacks (#557)" fileName="charts_CombatTables.jpg"/>
+                </VASSAL.build.widget.PanelWidget>
+            </VASSAL.build.widget.TabWidget>
             <VASSAL.build.widget.TabWidget entryName="Terrain">
                 <VASSAL.build.widget.PanelWidget entryName="Terrain" fixed="false" nColumns="3" scale="1.0" vert="false">
                     <VASSAL.build.widget.Chart chartName="Terrain" fileName="charts_Terrain.jpg"/>
